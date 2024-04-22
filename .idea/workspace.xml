@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/IBISscada.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMQX_Broker/setup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScadaAPP/Startup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Startup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Models/ResponseStatus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Room.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Sensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IBISscada.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBISscada.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Startup.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Startup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +43,65 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.MQTT_Broker.executor": "Run",
+    "Python.Startup (1).executor": "Run",
     "Python.Startup.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RunManager" selected="Python.Startup">
+    <configuration name="Startup (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IBISscada" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScadaAPP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScadaAPP/Startup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Startup" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="IBISscada" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimulatorSrv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulatorSrv/Startup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Startup (1)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,5 +119,21 @@
       <updated>1713694859334</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SimulatorSrv/Startup.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
