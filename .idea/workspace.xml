@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Models/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Models/Sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Sensor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.MQTT_Broker.executor": "Run",
-    "Python.Startup (1).executor": "Run",
+    "Python.Startup (1).executor": "Debug",
     "Python.Startup.executor": "Debug",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -46,7 +43,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Startup (1)">
+  <component name="RunManager" selected="Python.Startup">
     <configuration name="Startup (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IBISscada" />
       <option name="ENV_FILES" value="" />
@@ -130,11 +127,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SimulatorSrv/Startup.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="weather.value.forecast[0]" />
+        <watch expression="weather.value.forecast" />
+        <watch expression="weather.value" />
+        <watch expression="weather.value.forecast.forecastday" />
+        <watch expression="weather.value[&quot;forecast&quot;][&quot;forecastday&quot;][0]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

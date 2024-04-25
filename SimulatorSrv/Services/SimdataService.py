@@ -4,6 +4,7 @@ import SimulatorSrv.Models.Room as room
 import SimulatorSrv.Models.Sensor as sensor
 from dataclasses import dataclass, asdict
 import json
+from datetime import datetime
 #TODO - IMPLEMENT DATA SIMULATION HERE
 
 def generateRooms():
@@ -30,12 +31,25 @@ def generateRooms():
     rooms.append(room2)
     return rooms
 
+def generateValue(weather, s, devs):
+    if s.type == sensor.SensorType.TEMPERATURE:
+        temp = weather.value["forecast"]["forecastday"][0]["day"]["avgtemp_c"] #trenutni vremensku uslovi danas
+        #TO DO: Pronadji device koji odgovara ovom senzoru
+        #proveri da li je device upaljen ili ugasen, i onda smanji ili povecaj vrednot u odnosu na to.
+        #isto vazi za sve ostale
+        return temp
+    elif s.type == sensor.SensorType.HUMIDITY:
+        return 40
+    elif s.type == sensor.SensorType.MOTION:
+        return 1
+    elif s.type == sensor.SensorType.LIGHT:
+        return 70
 
 def SimData(loadedWeather):
     rooms = generateRooms()  # Pretpostavka da generateRooms() vraća listu objekata soba
     for r in rooms:
         for s in r.sensors:
-            s.currentValue = 10
+            s.currentValue = generateValue(loadedWeather, s, r.devices)
 
     # Pretvaranje svake sobe u rečnik
     rooms_as_dicts = []
