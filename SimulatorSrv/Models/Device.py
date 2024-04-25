@@ -4,6 +4,8 @@ class DeviceType(Enum):
     VENTILATION = 2
     ALARM = 3
     HEATER = 4
+    BLIND = 5
+    LIGHT = 6
 
 class Device:
     def __init__(self, state, name, type):

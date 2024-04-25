@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +129,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py</url>
-          <line>34</line>
+          <line>38</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
