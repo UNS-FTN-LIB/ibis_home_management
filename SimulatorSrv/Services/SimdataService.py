@@ -4,6 +4,7 @@ import SimulatorSrv.Models.Room as room
 import SimulatorSrv.Models.Sensor as sensor
 from dataclasses import dataclass, asdict
 import json
+import random
 from datetime import datetime
 #TODO - IMPLEMENT DATA SIMULATION HERE
 
@@ -43,11 +44,11 @@ def generateValue(weather, s, devs):
         #isto vazi za sve ostale
         return temp
     elif s.type == sensor.SensorType.HUMIDITY:
-        return 40
+        return random.randint(1, 40)
     elif s.type == sensor.SensorType.MOTION:
-        return 1
+        return random.randint(0, 1)
     elif s.type == sensor.SensorType.LIGHT:
-        return 70
+        return random.randint(1, 100)
 
 def SimData(loadedWeather):
     rooms = generateRooms()  # Pretpostavka da generateRooms() vraća listu objekata soba
