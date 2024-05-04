@@ -1,4 +1,4 @@
-import paho.mqtt.client as mqtt
+
 import random
 import ConditionHandler as conditionHandler
 from paho.mqtt import client as mqtt_client
@@ -33,21 +33,10 @@ def subscribe(client: mqtt_client):
         #TODO - READ NEW DATA AND CHANGE SCADA STATE
         print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
         alerts = conditionHandler.HandleConditions(msg.payload.decode())
-        publish(client,alerts)
+        print(f"Alerts ready: `{alerts}`")
+
     client.subscribe(topic_simulator)
     client.on_message = on_message
-
-    def publish(client, message):
-
-        result = client.publish(topic_client_response, message)
-        # result: [0, 1]
-        status = result[0]
-        if status == 0:
-            print(f"Send `{message}` to topic `{topic_client_response}`")
-
-        else:
-            print(f"Failed to send message to topic {topic_client_response}")
-
 
 def mqttSubscribe():
     client = connect_mqtt()

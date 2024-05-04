@@ -1,5 +1,7 @@
 import json
 import  ConditionHandlerModel
+import os
+
 def HandleConditions(conditions):
     with open('ConditionsConfig.json', 'r') as f:
         conditionsConfigJson = f.read()
@@ -32,7 +34,15 @@ def HandleConditions(conditions):
                 elif (sensor["currentValue"] > conditionsConfig["MAX_ACCEPTABLE_LIGHT"]):
                     model.blind_ON = 1
 
+
         alertList.append(model.to_dict())
+
+    file_path = "data.json"
+    if os.path.exists(file_path):
+        os.remove(file_path)
+
+    with open(file_path, 'w') as json_file:
+        json.dump(alertList, json_file, indent=4)
 
     jsonResponse = json.dumps(alertList, indent=4)
     return jsonResponse

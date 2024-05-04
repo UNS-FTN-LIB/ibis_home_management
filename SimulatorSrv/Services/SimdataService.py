@@ -3,7 +3,7 @@ import SimulatorSrv.Models.Device as device
 import SimulatorSrv.Models.Room as room
 import SimulatorSrv.Models.Sensor as sensor
 from dataclasses import dataclass, asdict
-import json
+import json, requests,os
 import random
 import SimulatorSrv.MQTT_Broker as MQTT_Broker
 from datetime import datetime
@@ -74,12 +74,12 @@ def generateRooms():
     rooms.append(room5)
     return rooms
 
-def generateValue(weather, s, devs):
+def generateDefaultValue(weather, s, devs):  #TODO OVA FUNKCIJA SE KORISTI KAD SIMULATOR PRVI PUT SALJE VREDNOSTI
     if s.type == sensor.SensorType.TEMPERATURE:
-        temp = weather.value["forecast"]["forecastday"][0]["day"]["avgtemp_c"] #trenutni vremensku uslovi danas
-        #TO DO: Pronadji device koji odgovara ovom senzoru
-        #proveri da li je device upaljen ili ugasen, i onda smanji ili povecaj vrednot u odnosu na to.
-        #isto vazi za sve ostale
+        temp = weather.value["forecast"]["forecastday"][0]["day"]["avgtemp_c"]  # trenutni vremensku uslovi danas
+        # TO DO: Pronadji device koji odgovara ovom senzoru
+        # proveri da li je device upaljen ili ugasen, i onda smanji ili povecaj vrednot u odnosu na to.
+        # isto vazi za sve ostale
         return temp
     elif s.type == sensor.SensorType.HUMIDITY:
         return random.randint(1, 100)
@@ -89,13 +89,30 @@ def generateValue(weather, s, devs):
         return random.randint(1, 100)
 
 
+def generateValue(activeConditions,clientResponseAlerts, s, devs):
+    print()
+    #TODO UBACITI LOGIKU IZMENE VREDNOSTI SIMULATORA VREMNOM U ODNOSU NA UPALJENE UREDJAJE I PRETHODNE VREDNOSTI
+
+
+
+
 
 def SimData(loadedWeather):
-
+    clientResponseData = ReciveAlertsFromCLient()
     rooms = generateRooms()  # Pretpostavka da generateRooms() vraća listu objekata soba
-    for r in rooms:
-        for s in r.sensors:
-            s.currentValue = generateValue(loadedWeather, s, r.devices)
+    if (os.path.exists("../activeConditions.json") == False):  #U OVAJ FAJL SE UPISUJE STA JE SIMULATOR PRETHODNO POSLAO
+        for r in rooms:
+            for s in r.sensors:
+                s.currentValue = generateDefaultValue(loadedWeather, s, r.devices)
+    else:
+        with open("../activeConditions.json", 'r') as json_file:
+            activeConditions = json.load(json_file)
+        with open("../clientResponseAlerts.json", 'r') as json_file:
+            clientResponseAlerts = json.load(json_file)
+        for r in rooms:
+            for s in r.sensors:
+                s.currentValue = generateValue(activeConditions,clientResponseAlerts, s, r.devices)
+                #TODO KORISTIMO PRETHODNE VREDNOSTI SIMULATORA I POVRATNE VREDNOSTI SCADE DA OSMISLIMO NOVE VREDNOSTI
 
     # Pretvaranje svake sobe u rečnik
     rooms_as_dicts = []
@@ -120,7 +137,16 @@ def SimData(loadedWeather):
             room_dict["sensors"].append(sensor_dict)
         rooms_as_dicts.append(room_dict)
 
+    #with open("../activeConditions.json", 'w') as json_file:
+        #json.dump(rooms_as_dicts, json_file, indent=4)   #TODO SVAKI PUT UPISEMO ONO STO JE SIMULATOR POSLAO
     room_json_str = json.dumps(rooms_as_dicts, indent=4)  # Pretvaranje liste rečnika u JSON format
     return room_json_str
 
 
+def ReciveAlertsFromCLient():
+
+    response = requests.get("http://localhost:5000/client-response")
+    if response.status_code == 200:
+        with open("../clientResponseAlerts.json", 'w') as json_file:
+            json.dump(response.json(), json_file, indent=4)
+            #TODO STOROVALI SMO POVRATNU VREDNOST SCADE I TE PODATKE KORISTIMO PRILIKOM GENERISANJA NOVOH VREDNOSTI

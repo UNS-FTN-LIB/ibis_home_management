@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandlerModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScadaAPP/ConditionsConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IBISscada.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBISscada.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScadaAPP/Startup.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/Startup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.MQTT_Broker.executor": "Debug",
+    "Python.SimdataService.executor": "Debug",
     "Python.Startup (1).executor": "Run",
     "Python.Startup.executor": "Run",
     "Python.main.executor": "Run",
@@ -69,6 +62,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SimdataService" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IBISscada" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimulatorSrv/Services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,6 +140,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Startup (1)" />
+        <item itemvalue="Python.SimdataService" />
         <item itemvalue="Python.MQTT_Broker" />
       </list>
     </recent_temporary>
@@ -165,6 +181,16 @@
           <url>file://$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py</url>
           <line>41</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
