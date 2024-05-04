@@ -5,8 +5,10 @@ import SimulatorSrv.Models.Sensor as sensor
 from dataclasses import dataclass, asdict
 import json
 import random
+import SimulatorSrv.MQTT_Broker as MQTT_Broker
 from datetime import datetime
 #TODO - IMPLEMENT DATA SIMULATION HERE
+
 
 def generateRooms():
     rooms = []
@@ -34,6 +36,42 @@ def generateRooms():
     room2.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.MOTION, name="MOTION2"))
     room2.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.LIGHT, name="LIGHT2"))
     rooms.append(room2)
+    room3 = room.Room("Room3")
+    room3.add_device(device.Device(state=False, name="AC-2", type=device.DeviceType.AC))
+    room3.add_device(device.Device(state=False, name="VENTILATION2", type=device.DeviceType.VENTILATION))
+    room3.add_device(device.Device(state=False, name="ALARM2", type=device.DeviceType.ALARM))
+    room3.add_device(device.Device(state=False, name="HEATER2", type=device.DeviceType.HEATER))
+    room3.add_device(device.Device(state=False, name="BLIND2", type=device.DeviceType.BLIND))
+    room3.add_device(device.Device(state=False, name="LIGHT2", type=device.DeviceType.LIGHT))
+    room3.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.TEMPERATURE, name="TEMPERATURE2"))
+    room3.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.HUMIDITY, name="HUMIDITY2"))
+    room3.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.MOTION, name="MOTION2"))
+    room3.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.LIGHT, name="LIGHT2"))
+    rooms.append(room3)
+    room4 = room.Room("Room4")
+    room4.add_device(device.Device(state=False, name="AC-2", type=device.DeviceType.AC))
+    room4.add_device(device.Device(state=False, name="VENTILATION2", type=device.DeviceType.VENTILATION))
+    room4.add_device(device.Device(state=False, name="ALARM2", type=device.DeviceType.ALARM))
+    room4.add_device(device.Device(state=False, name="HEATER2", type=device.DeviceType.HEATER))
+    room4.add_device(device.Device(state=False, name="BLIND2", type=device.DeviceType.BLIND))
+    room4.add_device(device.Device(state=False, name="LIGHT2", type=device.DeviceType.LIGHT))
+    room4.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.TEMPERATURE, name="TEMPERATURE2"))
+    room4.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.HUMIDITY, name="HUMIDITY2"))
+    room4.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.MOTION, name="MOTION2"))
+    room4.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.LIGHT, name="LIGHT2"))
+    rooms.append(room4)
+    room5 = room.Room("Room5")
+    room5.add_device(device.Device(state=False, name="AC-2", type=device.DeviceType.AC))
+    room5.add_device(device.Device(state=False, name="VENTILATION2", type=device.DeviceType.VENTILATION))
+    room5.add_device(device.Device(state=False, name="ALARM2", type=device.DeviceType.ALARM))
+    room5.add_device(device.Device(state=False, name="HEATER2", type=device.DeviceType.HEATER))
+    room5.add_device(device.Device(state=False, name="BLIND2", type=device.DeviceType.BLIND))
+    room5.add_device(device.Device(state=False, name="LIGHT2", type=device.DeviceType.LIGHT))
+    room5.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.TEMPERATURE, name="TEMPERATURE2"))
+    room5.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.HUMIDITY, name="HUMIDITY2"))
+    room5.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.MOTION, name="MOTION2"))
+    room5.add_sensor(sensor.Sensor(currentValue=20, type=sensor.SensorType.LIGHT, name="LIGHT2"))
+    rooms.append(room5)
     return rooms
 
 def generateValue(weather, s, devs):
@@ -44,13 +82,16 @@ def generateValue(weather, s, devs):
         #isto vazi za sve ostale
         return temp
     elif s.type == sensor.SensorType.HUMIDITY:
-        return random.randint(1, 40)
+        return random.randint(1, 100)
     elif s.type == sensor.SensorType.MOTION:
         return random.randint(0, 1)
     elif s.type == sensor.SensorType.LIGHT:
         return random.randint(1, 100)
 
+
+
 def SimData(loadedWeather):
+
     rooms = generateRooms()  # Pretpostavka da generateRooms() vraća listu objekata soba
     for r in rooms:
         for s in r.sensors:

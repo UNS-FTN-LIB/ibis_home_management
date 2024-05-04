@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandlerModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScadaAPP/ConditionsConfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IBISscada.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBISscada.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaIbis/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +43,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.MQTT_Broker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Startup (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Startup.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.MQTT_Broker.executor": "Debug",
+    "Python.Startup (1).executor": "Run",
+    "Python.Startup.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.Startup (1)">
+}]]></component>
+  <component name="RunManager" selected="Python.Startup">
+    <configuration name="MQTT_Broker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IBISscada" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScadaAPP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Startup (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IBISscada" />
       <option name="ENV_FILES" value="" />
@@ -77,8 +108,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (IBISscada)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimulatorSrv" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulatorSrv/Startup.py" />
@@ -93,6 +125,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Startup (1)" />
+        <item itemvalue="Python.MQTT_Broker" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +159,22 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="weather.value.forecast[0]" />
