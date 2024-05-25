@@ -1,0 +1,282 @@
+[
+    {
+        "devices": [
+            {
+                "name": "AC-1",
+                "state": false,
+                "type": "AC"
+            },
+            {
+                "name": "VENTILATION1",
+                "state": false,
+                "type": "VENTILATION"
+            },
+            {
+                "name": "ALARM1",
+                "state": false,
+                "type": "ALARM"
+            },
+            {
+                "name": "HEATER1",
+                "state": false,
+                "type": "HEATER"
+            },
+            {
+                "name": "BLIND1",
+                "state": false,
+                "type": "BLIND"
+            },
+            {
+                "name": "LIGHT1",
+                "state": false,
+                "type": "LIGHT"
+            }
+        ],
+        "sensors": [
+            {
+                "name": "TEMPERATURE1",
+                "currentValue": 20.0,
+                "type": "TEMPERATURE"
+            },
+            {
+                "name": "HUMIDITY1",
+                "currentValue": 14,
+                "type": "HUMIDITY"
+            },
+            {
+                "name": "MOTION1",
+                "currentValue": 1,
+                "type": "MOTION"
+            },
+            {
+                "name": "LIGHT1",
+                "currentValue": 48.0,
+                "type": "LIGHT"
+            }
+        ]
+    },
+    {
+        "devices": [
+            {
+                "name": "AC-2",
+                "state": false,
+                "type": "AC"
+            },
+            {
+                "name": "VENTILATION2",
+                "state": false,
+                "type": "VENTILATION"
+            },
+            {
+                "name": "ALARM2",
+                "state": false,
+                "type": "ALARM"
+            },
+            {
+                "name": "HEATER2",
+                "state": false,
+                "type": "HEATER"
+            },
+            {
+                "name": "BLIND2",
+                "state": false,
+                "type": "BLIND"
+            },
+            {
+                "name": "LIGHT2",
+                "state": false,
+                "type": "LIGHT"
+            }
+        ],
+        "sensors": [
+            {
+                "name": "TEMPERATURE2",
+                "currentValue": 20.0,
+                "type": "TEMPERATURE"
+            },
+            {
+                "name": "HUMIDITY2",
+                "currentValue": 44.80000000000007,
+                "type": "HUMIDITY"
+            },
+            {
+                "name": "MOTION2",
+                "currentValue": 0,
+                "type": "MOTION"
+            },
+            {
+                "name": "LIGHT2",
+                "currentValue": 50,
+                "type": "LIGHT"
+            }
+        ]
+    },
+    {
+        "devices": [
+            {
+                "name": "AC-2",
+                "state": false,
+                "type": "AC"
+            },
+            {
+                "name": "VENTILATION2",
+                "state": false,
+                "type": "VENTILATION"
+            },
+            {
+                "name": "ALARM2",
+                "state": false,
+                "type": "ALARM"
+            },
+            {
+                "name": "HEATER2",
+                "state": false,
+                "type": "HEATER"
+            },
+            {
+                "name": "BLIND2",
+                "state": false,
+                "type": "BLIND"
+            },
+            {
+                "name": "LIGHT2",
+                "state": false,
+                "type": "LIGHT"
+            }
+        ],
+        "sensors": [
+            {
+                "name": "TEMPERATURE2",
+                "currentValue": 20.0,
+                "type": "TEMPERATURE"
+            },
+            {
+                "name": "HUMIDITY2",
+                "currentValue": 18,
+                "type": "HUMIDITY"
+            },
+            {
+                "name": "MOTION2",
+                "currentValue": 0,
+                "type": "MOTION"
+            },
+            {
+                "name": "LIGHT2",
+                "currentValue": 51.6,
+                "type": "LIGHT"
+            }
+        ]
+    },
+    {
+        "devices": [
+            {
+                "name": "AC-2",
+                "state": false,
+                "type": "AC"
+            },
+            {
+                "name": "VENTILATION2",
+                "state": false,
+                "type": "VENTILATION"
+            },
+            {
+                "name": "ALARM2",
+                "state": false,
+                "type": "ALARM"
+            },
+            {
+                "name": "HEATER2",
+                "state": false,
+                "type": "HEATER"
+            },
+            {
+                "name": "BLIND2",
+                "state": false,
+                "type": "BLIND"
+            },
+            {
+                "name": "LIGHT2",
+                "state": false,
+                "type": "LIGHT"
+            }
+        ],
+        "sensors": [
+            {
+                "name": "TEMPERATURE2",
+                "currentValue": 20.0,
+                "type": "TEMPERATURE"
+            },
+            {
+                "name": "HUMIDITY2",
+                "currentValue": 49.70000000000017,
+                "type": "HUMIDITY"
+            },
+            {
+                "name": "MOTION2",
+                "currentValue": 0,
+                "type": "MOTION"
+            },
+            {
+                "name": "LIGHT2",
+                "currentValue": 3,
+                "type": "LIGHT"
+            }
+        ]
+    },
+    {
+        "devices": [
+            {
+                "name": "AC-2",
+                "state": false,
+                "type": "AC"
+            },
+            {
+                "name": "VENTILATION2",
+                "state": false,
+                "type": "VENTILATION"
+            },
+            {
+                "name": "ALARM2",
+                "state": false,
+                "type": "ALARM"
+            },
+            {
+                "name": "HEATER2",
+                "state": false,
+                "type": "HEATER"
+            },
+            {
+                "name": "BLIND2",
+                "state": false,
+                "type": "BLIND"
+            },
+            {
+                "name": "LIGHT2",
+                "state": false,
+                "type": "LIGHT"
+            }
+        ],
+        "sensors": [
+            {
+                "name": "TEMPERATURE2",
+                "currentValue": 20.0,
+                "type": "TEMPERATURE"
+            },
+            {
+                "name": "HUMIDITY2",
+                "currentValue": 31,
+                "type": "HUMIDITY"
+            },
+            {
+                "name": "MOTION2",
+                "currentValue": 0,
+                "type": "MOTION"
+            },
+            {
+                "name": "LIGHT2",
+                "currentValue": 66,
+                "type": "LIGHT"
+            }
+        ]
+    }
+]

@@ -7,6 +7,7 @@ import json, requests,os
 import random
 import SimulatorSrv.MQTT_Broker as MQTT_Broker
 from datetime import datetime
+
 #TODO - IMPLEMENT DATA SIMULATION HERE
 
 
@@ -89,8 +90,58 @@ def generateDefaultValue(weather, s, devs):  #TODO OVA FUNKCIJA SE KORISTI KAD S
         return random.randint(1, 100)
 
 
-def generateValue(activeConditions,clientResponseAlerts, s, devs):
-    print()
+def generateValue(activeConditions, clientResponseAlerts, s, devs, sensor_index, room_index,loadedWheather):
+    if s.type == sensor.SensorType.TEMPERATURE:
+        if(clientResponseAlerts["Alerts"][room_index]["heater_ON"] == 1):
+            oldTempValue = activeConditions[room_index]["sensors"][0]["currentValue"]
+            newTempValue = oldTempValue + 0.3 if oldTempValue < 40 else oldTempValue
+            return newTempValue;
+        elif(clientResponseAlerts["Alerts"][room_index]["ac_ON"] == 1):
+            oldTempValue = activeConditions[room_index]["sensors"][0]["currentValue"]
+            newTempValue = oldTempValue - 0.3 if oldTempValue > 12 else oldTempValue
+            return newTempValue;
+        else:
+            outsideTemp = loadedWheather.value["forecast"]["forecastday"][0]["day"]["avgtemp_c"]
+            oldTempValue = activeConditions[room_index]["sensors"][0]["currentValue"]
+            return oldTempValue + (outsideTemp - oldTempValue) * 0.005
+
+
+
+    elif s.type == sensor.SensorType.HUMIDITY:
+        current_value = activeConditions[room_index]["sensors"][1]["currentValue"]
+        if clientResponseAlerts["Alerts"][room_index]["ventilation_ON"] == 1:
+            return current_value - 0.3 if current_value - 0.3 > 0 else current_value
+        else:
+            randChange = random.randint(-2,2)
+            return current_value + randChange if current_value + randChange >0 and current_value + randChange <= 100 else current_value
+
+
+    elif s.type == sensor.SensorType.MOTION:
+        random_number = random.randint(1, 100)
+        if(clientResponseAlerts["Alerts"][room_index]["alarm_ON"] == 1):
+            if(random_number <=50):
+                return 0
+            else:
+                return 1
+        else:
+            if(random_number <=5):
+                return 1
+            else:
+                return 0
+
+
+
+    elif s.type == sensor.SensorType.LIGHT:
+        current_value = activeConditions[room_index]["sensors"][3]["currentValue"]
+        if clientResponseAlerts["Alerts"][room_index]["light_ON"] == 1:
+            return 80
+
+        elif clientResponseAlerts["Alerts"][room_index]["blind_ON"] == 1:
+            return current_value - current_value * 0.4
+
+        else:
+            return random.randint(1, 100)
+
     #TODO UBACITI LOGIKU IZMENE VREDNOSTI SIMULATORA VREMNOM U ODNOSU NA UPALJENE UREDJAJE I PRETHODNE VREDNOSTI
 
 
@@ -98,7 +149,7 @@ def generateValue(activeConditions,clientResponseAlerts, s, devs):
 
 
 def SimData(loadedWeather):
-    clientResponseData = ReciveAlertsFromCLient()
+    ReciveAlertsFromCLient()
     rooms = generateRooms()  # Pretpostavka da generateRooms() vraća listu objekata soba
     if (os.path.exists("../activeConditions.json") == False):  #U OVAJ FAJL SE UPISUJE STA JE SIMULATOR PRETHODNO POSLAO
         for r in rooms:
@@ -109,9 +160,9 @@ def SimData(loadedWeather):
             activeConditions = json.load(json_file)
         with open("../clientResponseAlerts.json", 'r') as json_file:
             clientResponseAlerts = json.load(json_file)
-        for r in rooms:
-            for s in r.sensors:
-                s.currentValue = generateValue(activeConditions,clientResponseAlerts, s, r.devices)
+        for room_index,r in enumerate(rooms):
+            for sensor_index,s in enumerate(r.sensors):
+                s.currentValue = generateValue(activeConditions,clientResponseAlerts, s, r.devices, sensor_index, room_index,loadedWeather)
                 #TODO KORISTIMO PRETHODNE VREDNOSTI SIMULATORA I POVRATNE VREDNOSTI SCADE DA OSMISLIMO NOVE VREDNOSTI
 
     # Pretvaranje svake sobe u rečnik
@@ -137,8 +188,8 @@ def SimData(loadedWeather):
             room_dict["sensors"].append(sensor_dict)
         rooms_as_dicts.append(room_dict)
 
-    #with open("../activeConditions.json", 'w') as json_file:
-        #json.dump(rooms_as_dicts, json_file, indent=4)   #TODO SVAKI PUT UPISEMO ONO STO JE SIMULATOR POSLAO
+    with open("../activeConditions.json", 'w') as json_file:
+        json.dump(rooms_as_dicts, json_file, indent=4)   #TODO SVAKI PUT UPISEMO ONO STO JE SIMULATOR POSLAO
     room_json_str = json.dumps(rooms_as_dicts, indent=4)  # Pretvaranje liste rečnika u JSON format
     return room_json_str
 
