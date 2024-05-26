@@ -8,7 +8,8 @@ class SensorType(Enum):
 
 
 class Sensor:
-    def __init__(self, currentValue, type, name):
+    def __init__(self, currentValue, type, name, topic):
         self.name = name
         self.currentValue = currentValue
         self.type = type
+        self.topic = topic

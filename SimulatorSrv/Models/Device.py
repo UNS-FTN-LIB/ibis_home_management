@@ -8,7 +8,8 @@ class DeviceType(Enum):
     LIGHT = 6
 
 class Device:
-    def __init__(self, state, name, type):
+    def __init__(self, state, name, type, topic):
         self.name = name
         self.state = state
         self.type = type
+        self.topic = topic
