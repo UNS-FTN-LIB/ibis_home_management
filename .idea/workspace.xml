@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/IBISscada.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBISscada.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Device.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Models/Sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Models/Sensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScadaAPP/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activeConditions.json" beforeDir="false" afterPath="$PROJECT_DIR$/activeConditions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientResponseAlerts.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientResponseAlerts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.MQTT_Broker.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.SimdataService.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Startup (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Startup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.MQTT_Broker.executor": "Debug",
+    "Python.SimdataService.executor": "Debug",
+    "Python.Startup (1).executor": "Debug",
+    "Python.Startup.executor": "Debug",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/stefa/OneDrive/Desktop/ibis_home_management/ScadaAPP",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stefa\OneDrive\Desktop\ibis_home_management\ScadaAPP" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.Startup">
     <configuration name="MQTT_Broker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IBISscada" />
@@ -181,9 +192,9 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py</url>
-          <line>150</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/ScadaAPP/ConditionHandler.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

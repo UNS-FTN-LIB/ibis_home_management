@@ -4,166 +4,64 @@
             {
                 "name": "AC-1",
                 "state": false,
-                "type": "AC"
+                "type": "AC",
+                "topic": "IbisRoom1AC"
             },
             {
                 "name": "VENTILATION1",
                 "state": false,
-                "type": "VENTILATION"
+                "type": "VENTILATION",
+                "topic": "IbisRoom1Vent"
             },
             {
                 "name": "ALARM1",
                 "state": false,
-                "type": "ALARM"
+                "type": "ALARM",
+                "topic": "IbisRoom1Alarm"
             },
             {
                 "name": "HEATER1",
                 "state": false,
-                "type": "HEATER"
+                "type": "HEATER",
+                "topic": "IbisRoom1Heater"
             },
             {
                 "name": "BLIND1",
                 "state": false,
-                "type": "BLIND"
+                "type": "BLIND",
+                "topic": "IbisRoom1Blind"
             },
             {
                 "name": "LIGHT1",
                 "state": false,
-                "type": "LIGHT"
+                "type": "LIGHT",
+                "topic": "IbisRoom1Light"
             }
         ],
         "sensors": [
             {
                 "name": "TEMPERATURE1",
                 "currentValue": 20.0,
-                "type": "TEMPERATURE"
+                "type": "TEMPERATURE",
+                "topic": "IbisRoom1Temp"
             },
             {
                 "name": "HUMIDITY1",
-                "currentValue": 14,
-                "type": "HUMIDITY"
+                "currentValue": 1,
+                "type": "HUMIDITY",
+                "topic": "IbisRoom1Huminity"
             },
             {
                 "name": "MOTION1",
-                "currentValue": 1,
-                "type": "MOTION"
+                "currentValue": 0,
+                "type": "MOTION",
+                "topic": "IbisRoom1Motion"
             },
             {
                 "name": "LIGHT1",
-                "currentValue": 48.0,
-                "type": "LIGHT"
-            }
-        ]
-    },
-    {
-        "devices": [
-            {
-                "name": "AC-2",
-                "state": false,
-                "type": "AC"
-            },
-            {
-                "name": "VENTILATION2",
-                "state": false,
-                "type": "VENTILATION"
-            },
-            {
-                "name": "ALARM2",
-                "state": false,
-                "type": "ALARM"
-            },
-            {
-                "name": "HEATER2",
-                "state": false,
-                "type": "HEATER"
-            },
-            {
-                "name": "BLIND2",
-                "state": false,
-                "type": "BLIND"
-            },
-            {
-                "name": "LIGHT2",
-                "state": false,
-                "type": "LIGHT"
-            }
-        ],
-        "sensors": [
-            {
-                "name": "TEMPERATURE2",
-                "currentValue": 20.0,
-                "type": "TEMPERATURE"
-            },
-            {
-                "name": "HUMIDITY2",
-                "currentValue": 44.80000000000007,
-                "type": "HUMIDITY"
-            },
-            {
-                "name": "MOTION2",
-                "currentValue": 0,
-                "type": "MOTION"
-            },
-            {
-                "name": "LIGHT2",
-                "currentValue": 50,
-                "type": "LIGHT"
-            }
-        ]
-    },
-    {
-        "devices": [
-            {
-                "name": "AC-2",
-                "state": false,
-                "type": "AC"
-            },
-            {
-                "name": "VENTILATION2",
-                "state": false,
-                "type": "VENTILATION"
-            },
-            {
-                "name": "ALARM2",
-                "state": false,
-                "type": "ALARM"
-            },
-            {
-                "name": "HEATER2",
-                "state": false,
-                "type": "HEATER"
-            },
-            {
-                "name": "BLIND2",
-                "state": false,
-                "type": "BLIND"
-            },
-            {
-                "name": "LIGHT2",
-                "state": false,
-                "type": "LIGHT"
-            }
-        ],
-        "sensors": [
-            {
-                "name": "TEMPERATURE2",
-                "currentValue": 20.0,
-                "type": "TEMPERATURE"
-            },
-            {
-                "name": "HUMIDITY2",
-                "currentValue": 18,
-                "type": "HUMIDITY"
-            },
-            {
-                "name": "MOTION2",
-                "currentValue": 0,
-                "type": "MOTION"
-            },
-            {
-                "name": "LIGHT2",
                 "currentValue": 51.6,
-                "type": "LIGHT"
+                "type": "LIGHT",
+                "topic": "IbisRoom1Light"
             }
         ]
     },
@@ -172,110 +70,196 @@
             {
                 "name": "AC-2",
                 "state": false,
-                "type": "AC"
+                "type": "AC",
+                "topic": "IbisRoom2AC"
             },
             {
                 "name": "VENTILATION2",
                 "state": false,
-                "type": "VENTILATION"
+                "type": "VENTILATION",
+                "topic": "IbisRoom2Vent"
             },
             {
                 "name": "ALARM2",
                 "state": false,
-                "type": "ALARM"
+                "type": "ALARM",
+                "topic": "IbisRoom2Alarm"
             },
             {
                 "name": "HEATER2",
                 "state": false,
-                "type": "HEATER"
+                "type": "HEATER",
+                "topic": "IbisRoom2Heater"
             },
             {
                 "name": "BLIND2",
                 "state": false,
-                "type": "BLIND"
+                "type": "BLIND",
+                "topic": "IbisRoom2Blind"
             },
             {
                 "name": "LIGHT2",
                 "state": false,
-                "type": "LIGHT"
+                "type": "LIGHT",
+                "topic": "IbisRoom2Light"
             }
         ],
         "sensors": [
             {
                 "name": "TEMPERATURE2",
                 "currentValue": 20.0,
-                "type": "TEMPERATURE"
+                "type": "TEMPERATURE",
+                "topic": "IbisRoom2Temp"
             },
             {
                 "name": "HUMIDITY2",
-                "currentValue": 49.70000000000017,
-                "type": "HUMIDITY"
+                "currentValue": 27.800000000000068,
+                "type": "HUMIDITY",
+                "topic": "IbisRoom2Huminity"
             },
             {
                 "name": "MOTION2",
                 "currentValue": 0,
-                "type": "MOTION"
+                "type": "MOTION",
+                "topic": "IbisRoom2Motion"
             },
             {
                 "name": "LIGHT2",
-                "currentValue": 3,
-                "type": "LIGHT"
+                "currentValue": 34,
+                "type": "LIGHT",
+                "topic": "IbisRoom2Light"
             }
         ]
     },
     {
         "devices": [
             {
-                "name": "AC-2",
+                "name": "AC-3",
                 "state": false,
-                "type": "AC"
+                "type": "AC",
+                "topic": "IbisRoom3AC"
             },
             {
-                "name": "VENTILATION2",
+                "name": "VENTILATION3",
                 "state": false,
-                "type": "VENTILATION"
+                "type": "VENTILATION",
+                "topic": "IbisRoom3Vent"
             },
             {
-                "name": "ALARM2",
+                "name": "ALARM3",
                 "state": false,
-                "type": "ALARM"
+                "type": "ALARM",
+                "topic": "IbisRoom3Alarm"
             },
             {
-                "name": "HEATER2",
+                "name": "HEATER3",
                 "state": false,
-                "type": "HEATER"
+                "type": "HEATER",
+                "topic": "IbisRoom3Heater"
             },
             {
-                "name": "BLIND2",
+                "name": "BLIND3",
                 "state": false,
-                "type": "BLIND"
+                "type": "BLIND",
+                "topic": "IbisRoom3Blind"
             },
             {
-                "name": "LIGHT2",
+                "name": "LIGHT3",
                 "state": false,
-                "type": "LIGHT"
+                "type": "LIGHT",
+                "topic": "IbisRoom3Light"
             }
         ],
         "sensors": [
             {
-                "name": "TEMPERATURE2",
+                "name": "TEMPERATURE3",
                 "currentValue": 20.0,
-                "type": "TEMPERATURE"
+                "type": "TEMPERATURE",
+                "topic": "IbisRoom3Temp"
             },
             {
-                "name": "HUMIDITY2",
-                "currentValue": 31,
-                "type": "HUMIDITY"
+                "name": "HUMIDITY3",
+                "currentValue": 8,
+                "type": "HUMIDITY",
+                "topic": "IbisRoom3Huminity"
             },
             {
-                "name": "MOTION2",
+                "name": "MOTION3",
                 "currentValue": 0,
-                "type": "MOTION"
+                "type": "MOTION",
+                "topic": "IbisRoom3Motion"
             },
             {
-                "name": "LIGHT2",
-                "currentValue": 66,
-                "type": "LIGHT"
+                "name": "LIGHT3",
+                "currentValue": 48.0,
+                "type": "LIGHT",
+                "topic": "IbisRoom3Light"
+            }
+        ]
+    },
+    {
+        "devices": [
+            {
+                "name": "AC-4",
+                "state": false,
+                "type": "AC",
+                "topic": "IbisRoom4AC"
+            },
+            {
+                "name": "VENTILATION4",
+                "state": false,
+                "type": "VENTILATION",
+                "topic": "IbisRoom4Vent"
+            },
+            {
+                "name": "ALARM4",
+                "state": false,
+                "type": "ALARM",
+                "topic": "IbisRoom4Alarm"
+            },
+            {
+                "name": "HEATER4",
+                "state": false,
+                "type": "HEATER",
+                "topic": "IbisRoom4Heater"
+            },
+            {
+                "name": "BLIND4",
+                "state": false,
+                "type": "BLIND",
+                "topic": "IbisRoom4Blind"
+            },
+            {
+                "name": "LIGHT4",
+                "state": false,
+                "type": "LIGHT",
+                "topic": "IbisRoom4Light"
+            }
+        ],
+        "sensors": [
+            {
+                "name": "TEMPERATURE4",
+                "currentValue": 20.0,
+                "type": "TEMPERATURE",
+                "topic": "IbisRoom4Temp"
+            },
+            {
+                "name": "HUMIDITY4",
+                "currentValue": 19.90000000000022,
+                "type": "HUMIDITY",
+                "topic": "IbisRoom4Huminity"
+            },
+            {
+                "name": "MOTION4",
+                "currentValue": 1,
+                "type": "MOTION",
+                "topic": "IbisRoom4Motion"
+            },
+            {
+                "name": "LIGHT4",
+                "currentValue": 87,
+                "type": "LIGHT",
+                "topic": "IbisRoom4Light"
             }
         ]
     }

@@ -165,13 +165,15 @@ def SimData(loadedWeather):
                 "name": device.name,
                 "state": device.state,
                 "type": device.type.name,
+                "topic": device.topic,
             }
             room_dict["devices"].append(device_dict)
         for sensor in room.sensors:
             sensor_dict = {
                 "name": sensor.name,
                 "currentValue": sensor.currentValue,
-                "type": sensor.type.name
+                "type": sensor.type.name,
+                "topic": sensor.topic
             }
             room_dict["sensors"].append(sensor_dict)
         rooms_as_dicts.append(room_dict)
