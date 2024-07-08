@@ -8,11 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/IBISscada.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBISscada.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/ConditionHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/MQTT_Broker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScadaAPP/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/ScadaAPP/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Services/SimdataService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activeConditions.json" beforeDir="false" afterPath="$PROJECT_DIR$/activeConditions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activeConditions.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/clientResponseAlerts.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientResponseAlerts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +42,8 @@
   "keyToString": {
     "Python.MQTT_Broker.executor": "Debug",
     "Python.SimdataService.executor": "Debug",
-    "Python.Startup (1).executor": "Debug",
-    "Python.Startup.executor": "Debug",
+    "Python.Startup (1).executor": "Run",
+    "Python.Startup.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -134,7 +133,7 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimulatorSrv" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulatorSrv/Startup.py" />
@@ -146,6 +145,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Startup" />
+      <item itemvalue="Python.MQTT_Broker" />
+      <item itemvalue="Python.SimdataService" />
+      <item itemvalue="Python.Startup (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Startup (1)" />

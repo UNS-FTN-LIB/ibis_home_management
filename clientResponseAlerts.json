@@ -3,10 +3,18 @@
         {
             "ac_ON": 0,
             "alarm_ON": 0,
-            "blind_ON": 1,
-            "heater_ON": 0,
+            "blind_ON": 0,
+            "heater_ON": 1,
             "light_ON": 0,
-            "ventilation_ON": 0
+            "ventilation_ON": 1
+        },
+        {
+            "ac_ON": 0,
+            "alarm_ON": 0,
+            "blind_ON": 0,
+            "heater_ON": 1,
+            "light_ON": 0,
+            "ventilation_ON": 1
         },
         {
             "ac_ON": 0,
@@ -14,23 +22,15 @@
             "blind_ON": 0,
             "heater_ON": 0,
             "light_ON": 0,
-            "ventilation_ON": 0
+            "ventilation_ON": 1
         },
         {
-            "ac_ON": 0,
-            "alarm_ON": 0,
-            "blind_ON": 1,
-            "heater_ON": 0,
-            "light_ON": 0,
-            "ventilation_ON": 0
-        },
-        {
-            "ac_ON": 0,
+            "ac_ON": 1,
             "alarm_ON": 0,
             "blind_ON": 0,
             "heater_ON": 0,
-            "light_ON": 0,
-            "ventilation_ON": 0
+            "light_ON": 1,
+            "ventilation_ON": 1
         }
     ]
 }

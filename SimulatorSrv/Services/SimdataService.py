@@ -82,16 +82,14 @@ def generateValue(activeConditions, clientResponseAlerts, s, devs, sensor_index,
     if s.type == sensor.SensorType.TEMPERATURE:
         if(clientResponseAlerts["Alerts"][room_index]["heater_ON"] == 1):
             oldTempValue = activeConditions[room_index]["sensors"][0]["currentValue"]
-            newTempValue = oldTempValue + 0.3 if oldTempValue < 40 else oldTempValue
+            newTempValue = oldTempValue + 0.3 if oldTempValue < 40 else 40
             return newTempValue;
         elif(clientResponseAlerts["Alerts"][room_index]["ac_ON"] == 1):
             oldTempValue = activeConditions[room_index]["sensors"][0]["currentValue"]
-            newTempValue = oldTempValue - 0.3 if oldTempValue > 12 else oldTempValue
+            newTempValue = oldTempValue - 0.3 if oldTempValue > 15 else 15
             return newTempValue;
         else:
-            outsideTemp = loadedWheather.value["forecast"]["forecastday"][0]["day"]["avgtemp_c"]
-            oldTempValue = activeConditions[room_index]["sensors"][0]["currentValue"]
-            return oldTempValue + (outsideTemp - oldTempValue) * 0.005
+            return random.randint(-5,40)
 
 
 
@@ -100,8 +98,7 @@ def generateValue(activeConditions, clientResponseAlerts, s, devs, sensor_index,
         if clientResponseAlerts["Alerts"][room_index]["ventilation_ON"] == 1:
             return current_value - 0.3 if current_value - 0.3 > 0 else current_value
         else:
-            randChange = random.randint(-2,2)
-            return current_value + randChange if current_value + randChange >0 and current_value + randChange <= 100 else current_value
+            return random.randint(35,65)
 
 
     elif s.type == sensor.SensorType.MOTION:
@@ -112,7 +109,7 @@ def generateValue(activeConditions, clientResponseAlerts, s, devs, sensor_index,
             else:
                 return 1
         else:
-            if(random_number <=5):
+            if(random_number <=20):
                 return 1
             else:
                 return 0

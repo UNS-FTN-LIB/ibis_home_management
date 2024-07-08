@@ -41,13 +41,13 @@
         "sensors": [
             {
                 "name": "TEMPERATURE1",
-                "currentValue": 20.0,
+                "currentValue": 10.900000000000004,
                 "type": "TEMPERATURE",
                 "topic": "IbisRoom1Temp"
             },
             {
                 "name": "HUMIDITY1",
-                "currentValue": 1,
+                "currentValue": 59.400000000000006,
                 "type": "HUMIDITY",
                 "topic": "IbisRoom1Huminity"
             },
@@ -59,7 +59,7 @@
             },
             {
                 "name": "LIGHT1",
-                "currentValue": 51.6,
+                "currentValue": 83,
                 "type": "LIGHT",
                 "topic": "IbisRoom1Light"
             }
@@ -107,13 +107,13 @@
         "sensors": [
             {
                 "name": "TEMPERATURE2",
-                "currentValue": 20.0,
+                "currentValue": 11.900000000000007,
                 "type": "TEMPERATURE",
                 "topic": "IbisRoom2Temp"
             },
             {
                 "name": "HUMIDITY2",
-                "currentValue": 27.800000000000068,
+                "currentValue": 49.800000000000125,
                 "type": "HUMIDITY",
                 "topic": "IbisRoom2Huminity"
             },
@@ -125,7 +125,7 @@
             },
             {
                 "name": "LIGHT2",
-                "currentValue": 34,
+                "currentValue": 72,
                 "type": "LIGHT",
                 "topic": "IbisRoom2Light"
             }
@@ -173,25 +173,25 @@
         "sensors": [
             {
                 "name": "TEMPERATURE3",
-                "currentValue": 20.0,
+                "currentValue": -1,
                 "type": "TEMPERATURE",
                 "topic": "IbisRoom3Temp"
             },
             {
                 "name": "HUMIDITY3",
-                "currentValue": 8,
+                "currentValue": 62.80000000000024,
                 "type": "HUMIDITY",
                 "topic": "IbisRoom3Huminity"
             },
             {
                 "name": "MOTION3",
-                "currentValue": 0,
+                "currentValue": 1,
                 "type": "MOTION",
                 "topic": "IbisRoom3Motion"
             },
             {
                 "name": "LIGHT3",
-                "currentValue": 48.0,
+                "currentValue": 97,
                 "type": "LIGHT",
                 "topic": "IbisRoom3Light"
             }
@@ -239,25 +239,25 @@
         "sensors": [
             {
                 "name": "TEMPERATURE4",
-                "currentValue": 20.0,
+                "currentValue": 30.700000000000014,
                 "type": "TEMPERATURE",
                 "topic": "IbisRoom4Temp"
             },
             {
                 "name": "HUMIDITY4",
-                "currentValue": 19.90000000000022,
+                "currentValue": 57.80000000000024,
                 "type": "HUMIDITY",
                 "topic": "IbisRoom4Huminity"
             },
             {
                 "name": "MOTION4",
-                "currentValue": 1,
+                "currentValue": 0,
                 "type": "MOTION",
                 "topic": "IbisRoom4Motion"
             },
             {
                 "name": "LIGHT4",
-                "currentValue": 87,
+                "currentValue": 80,
                 "type": "LIGHT",
                 "topic": "IbisRoom4Light"
             }
