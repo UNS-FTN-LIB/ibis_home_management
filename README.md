@@ -20,7 +20,18 @@ MQTT Klijent, takođe Python aplikacija, komunicira sa Simulatorom i InView SCAD
 
 ### InView SCADA
 
-InView Cloud SCADA služi za vizuelni prikaz događaja i promena u sistemu.
+InView Cloud SCADA rešenje omogućava daljinsko nadgledanje, upravljanje i prikupljanje podataka
+pomoću web pretraživača. Sistem je podeljen na dva glavna dela: Editor i Client.
+Editor
+Ovaj modul je namenjen za konfiguraciju i kreiranje prikaza koji će se kasnije koristiti na Client-u. Da
+bi SCADA sistem mogao da prikuplja podatke, neophodno je definisati sledeće elemente unutar
+Editora:
+ 1. Connections: Ovaj element uspostavlja vezu sa MQTT brokerom, preko kojeg se prate topic-i
+(varijable u InView) i šalju promene tih varijabli.
+ 2. Devices: Ovaj deo omogućava definisanje uređaja.
+ 3. Variables: Ovaj element služi za definisanje varijabli, uključujući ime, tip, i ostale atribute
+
+![img.png](img.png)
 
 ## Uputstvo za Pokretanje Sistema
 
@@ -37,3 +48,6 @@ InView Cloud SCADA služi za vizuelni prikaz događaja i promena u sistemu.
 3. Nakon uspešnog pokretanja EMQX brokera putem Docker-a, pokrenite `Startup.py` unutar Simulatora i SCADA Klijenta.
 
 4. Na InView SCADA sistemu možete pratiti promene vrednosti i uključivanje/isključivanje uređaja.
+
+
+DOKUMENTACIJA U PDF FORMATU:  https://drive.google.com/file/d/1w-ckcLhGuN1BFcv6XLYRXMN8m1y4nUWy/view?usp=drive_link
