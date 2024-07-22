@@ -7,6 +7,8 @@
     <list default="true" id="7240b6a5-a340-42bc-bcab-688ed454f8d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/Client/WheatherForecastClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +189,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/SimulatorSrv/MQTT_Broker.py</url>
-          <line>41</line>
+          <line>39</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

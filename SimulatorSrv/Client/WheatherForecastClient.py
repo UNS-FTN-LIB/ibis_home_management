@@ -5,7 +5,7 @@ def get_data():
     url = ('https://api.weatherapi.com'
            '/v1/history.json?q=45.267136%2C19.833549'
            '&dt=2024-07-8&end_dt=2024-07-08'
-           '&key=c6031ec8223d4e4cb78224104241702')
+           '&key={api_key}')
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()

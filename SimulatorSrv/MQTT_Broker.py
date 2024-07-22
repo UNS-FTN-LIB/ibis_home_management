@@ -8,8 +8,6 @@ topic_simulator = "python/mqtt-simulator"
 topic_client_response = "python/mqtt-clientResponse"
 # Generate a Client ID with the publish prefix.
 client_id = f'publish-{random.randint(0, 1000)}'
-# username = 'emqx'
-# password = 'public'
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):

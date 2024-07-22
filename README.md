@@ -44,10 +44,12 @@ Editora:
     ```sh
     docker run -d --name emqx -p 18083:18083 -p 1883:1883 emqx:latest
     ```
+4. Podesite WeatherForecastClient tako sto cete uneti vas api key
+5. Podesiti kredencijale EMTT Brokera unutar MQTT_Broker.py
 
-3. Nakon uspešnog pokretanja EMQX brokera putem Docker-a, pokrenite `Startup.py` unutar Simulatora i SCADA Klijenta.
+6. Nakon uspešnog pokretanja EMQX brokera putem Docker-a, pokrenite `Startup.py` unutar Simulatora i SCADA Klijenta.
 
-4. Na InView SCADA sistemu možete pratiti promene vrednosti i uključivanje/isključivanje uređaja.
+7. Na InView SCADA sistemu možete pratiti promene vrednosti i uključivanje/isključivanje uređaja.
 
 
 DOKUMENTACIJA U PDF FORMATU:  https://drive.google.com/file/d/1w-ckcLhGuN1BFcv6XLYRXMN8m1y4nUWy/view?usp=drive_link
